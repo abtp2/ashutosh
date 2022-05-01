@@ -14,8 +14,7 @@ function get(){
    
   if (x.style.justifyContent === "flex-start") {
     x.style.justifyContent = "flex-end";
-   x.style.background = "#000";
-     x.style.color = "#fff"; 
+   x.style.background = "#000";    
      y.style.background  = "#000";
      y.style.color = "#fff";
      z.style.background  = "#000";
@@ -25,12 +24,12 @@ function get(){
      b.style.border= "2.5px solid #000"
       b.style.background= "#000";
       c.style.background= "#000";
+       c.style.color= "#3fe413";
       d.style.background= "#000";
     
   } else {
     x.style.justifyContent = "flex-start";
-     x.style.background = "#fff";
-     x.style.color = "#3fe413";
+     x.style.background = "#fff"   
      y.style.background  = "#fff";
      y.style.color = "#000";
      z.style.background  = "#fff";
@@ -40,6 +39,7 @@ function get(){
      b.style.border= "2.5px solid #fff"
      b.style.background= "#fff";
      c.style.background= "#fff";
+     c.style.color= "#000";
      d.style.background= "#fff";
      
      
