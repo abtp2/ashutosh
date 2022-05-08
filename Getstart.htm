@@ -10,27 +10,26 @@
 				
 				
 <section style="height:100vh;" id="head">	
-<h1 style="font-family:fantasy;font-size:40px;font-weight:700;letter-spacing:2px;text-shadow:0px 0px 8px #fff;color:#fff;" align="center">Get started </h1>				
+<h1 style="font-family:fantasy;font-size:40px;font-weight:700;letter-spacing:2px;text-shadow:0px 0px 8px #fff;color:#fff;" align="center">Quick start</h1>				
 				
-	
 <h6 style="" align="center">
 These are the classes that you can add to your HTML page to make fast and responsive website without using a bulk of CSS.	
 <br>	
 <span>
 But, before adding these classes you have to add our <strong>cdn</strong> links in head tag of your HTML page.
 </h6>	
-	
+
 <h2 style="font-family:sans-serif;font-size:30px;line-height:27px; font-weight:700;letter-spacing:2px;color:#fff;padding: 10px; " align="center">Our CDN
 <hr style="width:250px;height:5px;border-radius:10px;background:#fff;">
 </h2>
 	
 
 <textarea readonly id="textbox" onclick="copyText()">
-https://cdn.jsdelivr.net/gh/abtp2/ashutosh/GetWeb.css
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/abtp2/ashutosh/GetWeb.css">
 </textarea>
 <br><br><br><br><br>
 <textarea readonly id="textbox2" onclick="copyType()">
-https://cdn.jsdelivr.net/gh/abtp2/ashutosh/GetWeb.js
+<script src="https://cdn.jsdelivr.net/gh/abtp2/ashutosh/GetWeb.js"></script>
 </textarea>
 <br><br><br><br><br>
 <a href="#main">
@@ -48,7 +47,9 @@ overflow-x:hidden;
 html{
 scroll-behavior:smooth;
 }
-
+input{
+outline:none;
+}
 ::selection{
 color:#fff;
 background:#3fe413;
@@ -59,26 +60,31 @@ margin:12px 10px;
 }
 
 #head textarea:hover{
-border:7.3px solid #b2b2b2;	
+border:6px solid #b2b2b2;	
 }
 
 #head textarea{
 width:92%;
+height:65px;
 color:#3fe413;
 position:absolute;
 transform:translateX(-50%);
 left:50%;
 user-select:all;
-padding:12px 10px;
+padding-inline:10px;
 outline:none;
 border:6px solid #202328;
 box-shadow:0px 0.2px 2px #fff;
 background:#000;
 border-radius:10px;
 resize:none;
-letter-spacing:2.5px;
+letter-spacing:2px;
 font-weight:800;
+font-size:12px;
+display:flex;
+align-items:center;
 overflow:hidden;
+font-family:fantasy;
 }
 
 @media(min-width:800px){
@@ -93,21 +99,35 @@ box-shadow:0px 0.2px 6px #fff;
 font-family:sans-serif;
 font-size:16px;
 line-height:25px; 
-font-weight:600;
-letter-spacing:1.5px;
+font-weight:500;
+letter-spacing:1px;
 color:#fff;
 padding: 10px;							
+margin-top:2rem;
 }
 
-@media(min-width: 800px){
+@media(min-width: 1100px) and (max-width:2000px){
 #head h6{				
 font-size:20px;
 line-height:28px; 
 font-weight:600;
 letter-spacing:1.5px;
-padding:10px 200px;							
+padding:10px 250px;							
+margin-top:4rem;
 }				
 }
+
+@media(min-width: 800px) and (max-width:1100px){
+#head h6{				
+font-size:20px;
+line-height:28px; 
+font-weight:600;
+letter-spacing:1.5px;
+padding:10px 150px;							
+margin-top:4rem;
+}				
+}
+
 
 #head-img{
 width:100px;
@@ -545,9 +565,110 @@ right:10px;
 
 
 
+<br><br><br><br><br><br>
+
+<!-- components -->
+<center>
+<h1 style="font-family:fantasy;font-size:40px;font-weight:600;letter-spacing:2px;text-shadow:0px 0px 8px #fff;color:#fff;" align="center">Want something more?</h1>			
+<h6 align="center" id="comp-head">
+Check our latest COMPONENTS,  which makes web designing more easier then your thinking .
+</h6>	
+<a href="components.html" id="component">Components</a>	
+</center>
+
+<br>
+
+<div class="form-main"> <div class="wrapper"> <div class="title"><span>Message here</span>
+<hr style="width: 80%;height:2px;border-radius:10px;background:#fff;">
+</div> <form action="https://formspree.io/f/xlezdzrn" method="post"> <div class="row"> <input type="email" placeholder="Email or Phone" name="_replyto" required> </div> <div class="row" id="row2">  
+<textarea id="text-write" placeholder="Write your message here....." name="message"></textarea>
+</div> <div class="pass"><a href="#">We don't share this information</a></div>
+<br>
+ <div class="row button"> <input type="submit" value="Submit"> </div> <div class="signup-link"><a href="index.html#contact">Contact us for more need</a></div> </form> </div> </div> <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); 
+ .form-main{ width:400px; padding: 0 20px; margin: 50px auto; } .wrapper{ width: 100%; background: #202328; border-radius: 5px; box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1); } .wrapper .title{ height: 90px; background: #202328; border-radius: 5px 5px 0 0; color: #fff;
+ font-size: 30px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-direction:column;padding-top:15px;} 
+.form-main form{
+ 
+ }
+ .wrapper form{ padding: 15px 25px 25px 25px; } .wrapper form .row{ height: 45px; margin-bottom: 15px; position: relative; } .wrapper form .row input{ height: 100%; width: 100%; outline: none; padding-left:10px;border-radius: 5px;font-size: 16px; transition: all 0.3s ease; } form .row input:focus{ border-color: #202328; box-shadow: 0px 0px 2px 2px #fff}
+ #text-write:focus{
+ border-color: #202328; 
+ box-shadow:0px 0px 2px 2px #fff;
+  }
+ #row2{
+ height:90px;
+ }
+#text-write{
+height:130px;
+padding:0;
+outline:none;
+width:100%;
+border-radius: 5px; 
+border: 2px solid #202328;
+transition: all 0.3s ease;
+resize:none;
+padding-left:10px;
+padding-top:10px;
+}
+@media(min-width:800px){
+.form-main{
+width:600px;
+margin: 80px auto; 
+}
+}
+
+form .row input::placeholder{ color: #999; } .wrapper form .row i{ position: absolute; width: 47px; height: 100%; color: #fff; font-size: 18px; background: #202328; border: 1px solid #202328; border-radius: 5px 0 0 5px; display: flex; align-items: center; justify-content: center; } .wrapper form .pass{ margin: -8px 0 20px 0; } .wrapper form .pass a{ color: #202328; font-size: 17px; text-decoration: none; } .wrapper form .pass a:hover{ text-decoration: underline; } 
+.wrapper form .button input{ color: #fff; font-size: 20px; font-weight: 500; padding-left: 0px; background: #202328; border-radius:5px;outline:none; border:2px solid #fff; cursor: pointer;} form .button input:hover{ background: #fff;color:#202328;border:2px solid #202328; 
+ box-shadow:0px 0px 2px 2px #fff; } .wrapper form .signup-link{ text-align: center; margin-top: 20px; font-size: 17px;color:#; } .wrapper form .signup-link a{ color:#6a6a6a; text-decoration:underline; } form .signup-link a:hover{ text-decoration: underline; } </style>
 
 
 
+<style>
+#component{
+background:#3fe413;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+padding:9px 13px;
+border-radius:5px;
+}
+#component:hover{
+border:2px solid #fff;
+}
+
+#comp-head{				
+font-family:sans-serif;
+font-size:16px;
+line-height:25px; 
+font-weight:500;
+letter-spacing:1px;
+color:#fff;
+padding-inline: 10px;							
+}
+
+@media(min-width: 1100px) and (max-width:2000px){
+#comp-head{					
+font-size:20px;
+line-height:28px; 
+font-weight:600;
+letter-spacing:1.5px;
+padding-inline:250px;							
+margin-top:2rem;
+}				
+}
+
+@media(min-width: 800px) and (max-width:1100px){
+#comp-head{				
+font-size:20px;
+line-height:28px; 
+font-weight:600;
+letter-spacing:1.5px;
+padding-inline:150px;							
+margin-top:2rem;
+}				
+}
+
+</style>
 
 
 
