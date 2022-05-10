@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+			<meta name="theme-color" content="#000">
+<title>GetWeb</title>
+</head>
+<body>
+
+<section id="head">
+<h1 style="font-family:fantasy;font-size:40px;font-weight:700;letter-spacing:2px;text-shadow:0px 0px 8px #fff;color:#fff;margin-top:3rem;" align="center">Components</h1>				
+				
+<h6 align="center">
+These are the components that you can in your HTML page to make fast and responsive website without typing a bulk of CSS.
+</h6>	
+</section>
+
+
+<section id="component">
+<h1 style="font-family:sans-serif;font-size:30px;font-weight:700;letter-spacing:2px;text-shadow:0px 0px 8px #fff;color:#fff;margin-top:5rem;" align="center">Navigation bar <hr style="width:300px;background:#fff;height:3px;border-radius:20px;"></h1>				
+
+
+
+<div id="total-nav">
+				
+<div class="nav-parent">
+<div id="navigation">
+<h3>Dark navigation bar</h3>
+<img src="navbar.gif" width="90%">
+</div>
+
+        <textarea id="textbox-1" onclick="copyText()" readonly>
+<div class="nav p-fi bc-black" id="navbar">
+<!-- navbar heading and toggle button -->		
+<div class="nav-heading p-ab c-white l-1 fw-bold fs-7">Navbar</div>				
+<div class="nav-toggler p-ab r-1 bc-white" id="nav-toggler">&#9776;</div>
+ <!-- navbar links -->
+<div class="nav-links">
+<a href="" class="bc-white c-black br-1">Home</a>
+<a href="" class="bc-white c-black br-1">Contact</a>
+<a href="" class="bc-white c-black br-1">Gallery</a>
+<a href="" class="bc-white c-black br-1">About</a>
+</div>		
+<!--  navbar search box -->
+<div class="nav-form">
+<form>
+<input type="search" placeholder="Search..." class="bx-1-light mb-1 bc-white c-black">		
+ </form>
+ </div>   
+ </div>
+        </textarea>
+</div>
+
+
+<div class="nav-parent">
+<div id="navigation">
+<h3>Light navigation bar</h3>
+<img src="navbar(light).gif" width="90%">
+</div>
+   <textarea readonly id="textbox-2" onclick="copyText2()">
+<div class="nav p-fi bc-ws" id="navbar">
+<!-- navbar heading and toggle button -->		
+<div class="nav-heading p-ab c-black l-1 fw-bold fs-7">Navbar</div>				
+ <div class="nav-toggler p-ab r-1 bc-white" 	id="nav-toggler">&#9776;</div>
+<!-- navbar links -->
+<div class="nav-links">
+<a href="" class="bc-black c-white br-1">Home</a>
+<a href="" class="bc-black c-white br-1">Contact</a>
+<a href="" class="bc-black c-white br-1">Gallery</a>
+<a href="" class="bc-black c-white br-1">About</a>
+</div>		
+<!--  navbar search box -->
+<div class="nav-form">
+<form>
+<input type="search" placeholder="Search..." class="bx-1-dark mb-1 bc-black c-white">		
+</form>
+</div>   
+ </div>
+        </textarea>
+</div>
+</div>
+</section>
+<img src="lines-4-4ea88270d73b7f6eaaa69e91aed97ddf.svg" width="350" style="margin-top:2.5rem; ">
+
+
+
+
+<style>
+body{
+margin:0;
+background:#000;
+user-select:none;
+overflow-x:hidden;
+}		
+#head h6{				
+font-family:sans-serif;
+font-size:18px;
+line-height:25px; 
+font-weight:500;
+letter-spacing:1px;
+color:#fff;
+padding: 10px;							
+margin-top:2rem;
+}
+
+@media(min-width: 1100px) and (max-width:2000px){
+#head h6{				
+font-size:20px;
+line-height:28px; 
+font-weight:600;
+letter-spacing:1.5px;
+padding:10px 250px;							
+margin-top:4rem;
+}				
+}
+
+@media(min-width: 800px) and (max-width:1100px){
+#head h6{				
+font-size:20px;
+line-height:28px; 
+font-weight:600;
+letter-spacing:1.5px;
+padding:10px 150px;							
+margin-top:4rem;
+}				
+}
+
+.nav-parent{
+display:flex;
+flex-direction:column; 
+align-items:center;
+justify-contentcenter; 
+width:100%;
+}
+#component #navigation{
+display:flex;
+flex-direction:column; 
+align-items:center;
+justify-contentcenter; 
+width:22rem;
+color:#fff;
+border-radius:10px; 
+border:3px solid #fff;
+margin-top:3rem;
+background:#000;
+padding-bottom:10px;
+box-shadow:0px 0px 10px #fff;
+}
+.nav-parent textarea{
+background: #000;
+color:#a9a9a9;
+box-shadow:0px 0px 10px #fff;
+width:20.6rem;
+border-radius:10px;
+outline:none;				
+resize:none;
+height:230px;
+border-bottom:3px solid #fff;
+border-left:3px solid #fff;
+border-right:3px solid #fff;
+padding:10px 10px;
+line-height:28px;
+font-weight:bold;
+font-size:11px;
+user-select:all;
+}
+textarea::selection{
+background:#202328;
+color:#fff;
+}
+
+
+
+@media(min-width:800px){
+#total-nav{
+display:flex;
+flex-direction:row;
+padding-inline:50px;
+}
+}				
+@media(max-width:400px){
+#component #navigation{
+width:20rem;
+}
+.nav-parent textarea{
+width:18.6rem;
+}
+}
+</style>				
+
+
+
+
+<script>
+  function copyText() {
+ var Text = document.getElementById("textbox-1");
+Text.select();
+navigator.clipboard.writeText(Text.value);
+}
+
+  function copyText2() {
+ var Text2 = document.getElementById("textbox-2");
+Text2.select();
+navigator.clipboard.writeText(Text2.value);
+}
+</script>
+</body>
+</html>
