@@ -34,7 +34,7 @@ These are the components that you can in your HTML page to make fast and respons
 <div class="nav p-fi bc-black" id="navbar">
 <!-- navbar heading and toggle button -->		
 <div class="nav-heading p-ab c-white l-1 fw-bold fs-7">Navbar</div>				
-<div class="nav-toggler p-ab r-1 bc-white" id="nav-toggler">&#9776;</div>
+<div class="nav-toggler p-ab r-1 bc-white" id="nav-toggler"></div>
  <!-- navbar links -->
 <div class="nav-links">
 <a href="" class="bc-white c-black br-1">Home</a>
@@ -59,10 +59,10 @@ These are the components that you can in your HTML page to make fast and respons
 <img src="navbar(light).gif" width="90%">
 </div>
    <textarea readonly id="textbox-2" onclick="copyText2()">
-<div class="nav p-fi bc-ws" id="navbar">
+<div class="nav p-fi bc-ws-1" id="navbar">
 <!-- navbar heading and toggle button -->		
 <div class="nav-heading p-ab c-black l-1 fw-bold fs-7">Navbar</div>				
- <div class="nav-toggler p-ab r-1 bc-white" 	id="nav-toggler">&#9776;</div>
+ <div class="nav-toggler p-ab r-1 bc-white" 	id="nav-toggler"></div>
 <!-- navbar links -->
 <div class="nav-links">
 <a href="" class="bc-black c-white br-1">Home</a>
@@ -82,6 +82,66 @@ These are the components that you can in your HTML page to make fast and respons
 </div>
 </section>
 <img src="lines-4-4ea88270d73b7f6eaaa69e91aed97ddf.svg" width="350" style="margin-top:2.5rem; ">
+
+
+
+<!-- for card  -->
+
+
+
+<section id="component">
+<h1 style="font-family:sans-serif;font-size:30px;font-weight:700;letter-spacing:2px;text-shadow:0px 0px 8px #fff;color:#fff;margin-top:5rem;" align="center">Cards<hr style="width:300px;background:#fff;height:3px;border-radius:20px;"></h1>				
+
+
+
+<div id="total-nav">
+				
+<div class="nav-parent">
+<div id="navigation">
+<h3>Dark card</h3>
+<img src="card(dark).comp.jpg" style="border:2px solid #555555;border-radius:5px; " width="85%">
+</div>
+
+        <textarea id="textbox-3" onclick="copyText3()" readonly>
+<div class="card bc-black">			
+<div class="card-head bc-white">
+<h2>Here will be the card's title or heading</h2>
+</div>	
+<div class="card-body c-white">
+<p class="p-1">Now time to write something on this note on this card body.It's your wish you can write anything here you want.</p>		
+</div>
+<div class="card-button">
+<a href="" class="bc-white c-black p-1 br-1">Go somewhere</a>				
+</div>
+</div>
+        </textarea>
+</div>
+
+
+<div class="nav-parent">
+<div id="navigation">
+<h3>Light card</h3>
+<img src="card(light).comp.jpg" width="85%">
+</div>
+   <textarea readonly id="textbox-4" onclick="copyText4()">
+<div class="card bc-white c-black">			
+<div class="card-head bc-ws-1">
+<h2>Here will be the card's title or heading</h2>
+</div>	
+<div class="card-body">
+<p class="p-1">Now time to write something on this note on this card body.It's your wish you can write anything here you want.</p>		
+</div>
+<div class="card-button">
+<a href="" class="bc-black c-white p-1 br-1">Go somewhere</a>				
+</div>
+</div>
+        </textarea>
+</div>
+</div>
+</section>
+
+
+<img src="lines-4-4ea88270d73b7f6eaaa69e91aed97ddf.svg" width="350" style="margin-top:2.5rem;position: absolute;right:10px;">
 
 
 
@@ -148,8 +208,8 @@ padding-bottom:10px;
 box-shadow:0px 0px 10px #fff;
 }
 .nav-parent textarea{
-background: #000;
-color:#a9a9a9;
+background: #202328;
+color:#fff;
 box-shadow:0px 0px 10px #fff;
 width:20.6rem;
 border-radius:10px;
@@ -166,8 +226,8 @@ font-size:11px;
 user-select:all;
 }
 textarea::selection{
-background:#202328;
-color:#fff;
+background:#fff;
+color:#202328;
 }
 
 
@@ -203,6 +263,18 @@ navigator.clipboard.writeText(Text.value);
  var Text2 = document.getElementById("textbox-2");
 Text2.select();
 navigator.clipboard.writeText(Text2.value);
+}
+
+  function copyText3() {
+ var Text3 = document.getElementById("textbox-3");
+Text3.select();
+navigator.clipboard.writeText(Text3.value);
+}
+
+  function copyText4() {
+ var Text4 = document.getElementById("textbox-4");
+Text4.select();
+navigator.clipboard.writeText(Text4.value);
 }
 </script>
 </body>

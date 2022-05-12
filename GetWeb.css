@@ -4,12 +4,24 @@ Pandey */
 
 
 /* universal */
+*{
+box-sizing:border-box;
+}
+
 body{
 margin:0;
+width:100%;
+padding:0;
 }
 
 .us-none{
 user-select:none;
+}
+.ph-white::placeholder{
+color:#f6f6f6;
+}
+.ph-black::placeholder{
+color:#000;
 }
 
 html{
@@ -211,6 +223,48 @@ margin-right:0rem;
 .px-auto{
 padding-inline:auto;
 }
+.px-1{
+padding-inline:0.5rem;
+}
+.px-2{
+padding-inline:1rem;
+}
+.px-3{
+padding-inline:1.5rem;
+}
+.px-4{
+padding-inline:2rem;
+}
+.px-5{
+padding-inline:2.5rem;
+}
+.px-6{
+padding-inline:3rem;
+}
+.px-7{
+padding-inline:3.5rem;
+}
+.px-8{
+padding-inline:4rem;
+}
+.px-9{
+padding-inline:4.5rem;
+}
+.px-10{
+padding-inline:5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .p-1{
 padding:0.5rem;
@@ -450,6 +504,16 @@ margin-right:0rem;
 .bc-ws{
 background-color:#ededed;
 }
+.bc-ws-1{
+background-color:#dbdbdb;
+}
+.bc-ws-2{
+background-color:#bdbdbd;
+}
+.bc-ws-3{
+background-color:#999999;
+}
+
 
 /* for purple */
 .mr-0{
@@ -557,7 +621,7 @@ transform:translate(-50%,-50%);
 
 /* For border-radius */
 .br-1{
-border-radius:10px;
+border-radius:8px;
 }
 .br-2{
 border-radius:15px;
@@ -1325,6 +1389,15 @@ text-shadow:0px 0px 50px #000;
 }
 /* text-shadow ended*/
 
+/* for border and outline */
+.b-none{
+border:none;
+}
+.o-none{
+outline:none;
+}
+
+/* boder and outline ended*/
 
 
 /* hidden and disable */
@@ -1486,21 +1559,23 @@ animation:spinner 1s linear infinite;
 @keyframes spinner {
 0%{
 transform:rotate(0deg);
-}				
+}
 100%{
 transform:rotate(360deg);
-}	
+}
 }
 
 
 /* navbar */
 .nav{
-width:100vw;
+width:100%;
 padding:7px 9px;
 overflow:hidden;
 height:60px;
 min-height:60px;
 z-index:9999;
+top:0;
+user-select:none;
 }
 .nav-heading{
 letter-spacing:1px;
@@ -1524,6 +1599,11 @@ padding:5px 10px;
 border-radius:6px;
 font-size:25px;
 }
+
+.nav-toggler:after{
+content: "\002630";
+}
+
 .nav-form{
 margin-top:0.8rem;
 width:100%;
@@ -1540,7 +1620,6 @@ font-size:17px;
 border:1px solid #fff;
 border-radius:5px;
 }
-
 
 
 @media(min-width:800px){
@@ -1591,8 +1670,31 @@ border-radius:5px;
 }
 
 
+/* card component */
+.card{
+width:18rem;
+padding:15px 8px;
+padding-bottom:20px;
+border-radius:5px;
+} 
+.card-body{
+line-height:25px;
+}
+.card-head{
+padding:10px 8px;
+}
+.card-head img{
+width:100%;				
+}
+.card-button{
+margin-left:0.5rem;
+}
+.card-button a{
+text-decoration:none;
+font-size:14px;
+}
 
-
+/* card ended */
 
 
 
