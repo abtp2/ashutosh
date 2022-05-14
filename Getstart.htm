@@ -750,7 +750,11 @@ background-color: #000;
  }
 details{
 line-height:30px;
+transition:all 0.3s;
 } 
+
+details[open] summary ~ * { animation: sweep .5s ease-in-out; } @keyframes sweep { 0% {opacity: 0; margin-left: -10px} 100% {opacity: 1; margin-left: 0px} }
+
 summary{
 font-weight:bold;
 color:#3fe413;

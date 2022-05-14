@@ -1,14 +1,16 @@
 function get(){
 var copyText = document.getElementById("alert");
 alert(copyText.value);
-}
- 
+} 
 document.getElementById("nav-toggler").addEventListener("click", function(){ 
 const x = document.getElementById("navbar");
-if(x.style.height === "auto") {
-x.style.height ="60px";		
+if(x.style.maxHeight === "2000px") {
+x.style.maxHeight ="60px";		
+x.style.transition ="all 0.3s";
 }else {
-x.style.height ="auto";				
+x.style.maxHeight ="2000px";				
+x.style.transition ="all 1s";
 }
 }); 
 
+ 
