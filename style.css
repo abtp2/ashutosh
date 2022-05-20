@@ -127,8 +127,16 @@ letter-spacing:3px;
 font-family:fantasy;
 color:#3fe413;	
 position: absolute;
+left:35px;
+top:72px;
+}
+
+@media(min-width:1200px){
+#nav-logo{
+position: absolute;
 left:40px;
 top:90px;
+}				
 }
 
 #nav-logo h6{
@@ -460,7 +468,14 @@ color:#fff;
 
 @media(min-width: 1200px){
 #second{
-margin-top:20rem;
+margin-top:22rem;
+color:#fff;
+}				
+}
+
+@media(min-width:800px){
+#second{
+margin-top:18rem;
 color:#fff;
 }				
 }
@@ -480,7 +495,24 @@ font-size:15px;
 line-height:23px;
 }
 
-@media(min-width:768px){
+@media(min-width:650px){
+#second h2{
+color:#fff;
+padding:20px 20px;
+font-weight:bold;
+font-size:30px;
+letter-spacing:2.5px;
+}
+#second h6{
+color:#a2a2a2;
+padding:0px 50px;
+font-weight:400;
+font-size:20px;
+line-height:30px;
+}								
+}
+
+@media(min-width:900px){
 #second h2{
 color:#fff;
 padding:20px 200px;
@@ -526,6 +558,7 @@ font-size:20px;
 
 .card{
 width:22rem;
+border-radius:10px;
 }
 
 @media(min-width:768px) and (max-width:1104px){
@@ -574,6 +607,7 @@ padding:10px 15px;
 
 #contact{
 background:#000;
+margin-top:2rem;
 }
 
 #con_send{
@@ -581,19 +615,30 @@ background:#3fe413;
 }
 
 #main-form{
-padding-inline:4rem;
+width:50%;
+padding-inline:2rem;
+margin-right:1rem;
 }
 
-@media(max-width:992px){
+@media(max-width:650px){
 #main-form{
 margin-top:3rem;
-width:90%;
+width:87%;
 padding-inline:2rem;
 }				
 #contact{
 margin-top:2rem;
 }
 }
+
+@media(min-width:900px){
+#main-form{
+width:50%;
+padding-inline:3rem;
+margin-top:0rem;
+}								
+}
+
 
 #floatingTextarea2::placeholder{
 color:#000;	
