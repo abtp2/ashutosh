@@ -2,35 +2,56 @@
 <html lang="en">
 <head>
 				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-				<link rel="stylesheet" href="getweb.css">
-				<link rel="stylesheet" href="GetWeb2.css">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+				<link rel="stylesheet" href="GetWeb.css">
 				<title>Page title</title>
 </head>
-<body class="bc-purple us-none p-2">
-				
-<center>
-<div class="row bx-2-white br-7 bc-black" onclick="setTimeout(get, 3000);">
-				
-<div class="col-sm-12 col-md-6 col-lg-4">
-	 <img src="file:///storage/emulated/0/20program HTML/Bootstrap_logo.svg.png" height="200" width="260">
+<body class="bc-ws-1">
+
+
+<div class="nav p-fi bc-black c-white bx-1-light" id="navbar">
+<!-- navbar heading and toggle button -->		
+<div class="nav-heading p-ab l-1 fw-bold fs-7">Navbar</div>				
+ <div class="nav-toggler p-ab r-1 bc-white" 	id="nav-toggler"></div>
+<!-- navbar links -->
+<div class="nav-links">
+<a href="" class="bc-white br-1 c-black">Home</a>
+<a href="" class="bc-white br-1 c-black">Contact</a>
+<a href="" class="bc-white br-1 c-black">Gallery</a>
+<a href="" class="bc-white br-1 c-black">About</a>
+</div>		
+<!--  navbar search box -->
+<div class="nav-form">
+<form>
+<input type="search" placeholder="Search..." class="nav-search bc-white c-black ph-black">	
+<input type="submit" class="nav-submit bc-black c-white b-1-white">	
+</form>
+</div>   
+</div>
+
+
+ <div class="card bc-black c-white mt-6 center px-5" onclick="get()">			
+<div class="card-head bc-white">
+<img src="file:///storage/emulated/0/GET Web/about2.jpg" width="150" class="br-2 bc-black p-1">
 </div>	
-<div class="col-sm-12 col-md-6 col-lg-4 p-2">
-	<h1 class="tx-2-white c-white">Bootstrap</h1>
-	<h2 class="tx-2-white c-white fs-5 p-1">GetWeb.css is better than this Bootstrap 😎</h2>
+<div class="card-body">
+<p class="p-1">Now time to write something on this note on this card body.It's your wish you can write anything here you want.</p>		
+</div>
+<div class="card-button">
+<a href="" class="bc-white c-black p-1 br-1 fw-5">Go somewhere<span class="gw-icon">confirmation_number</span></a>			
+
+</div>
 </div>
 
-<div class="col-sm-12 col-md-6 col-lg-4 p-2">
-	<h1 class="tx-2-white c-white">Bootstrap</h1>
-	<h2 class="tx-2-white c-white fs-5 p-1">GetWeb.css is better than this Bootstrap 😎</h2>
-</div>
+</div>  
+        
 
-</div></center>
-
-<input value="👋 Ashutosh Pandey" id="alert">
+<h1 class="fs-8 mt-3 m-0" align="center">Ashutosh Pandey </h1>
+<p class="px-4 lh-4 fw-5 m-0" align="center">Thank you 😊 for  viewing this page .<br>Actually, i am a Web developer and the founder of "GetWeb" foundation. </p>
+<button class="btn bc-black c-white fs-3 center">Learn more</button>
 
 
-
+<input value="Alert activated 😄😄" id="alert">
 <script src="GetWeb.js"></script>
 </body>
 </html>

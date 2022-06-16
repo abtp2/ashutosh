@@ -1,6 +1,6 @@
 <!DOCTYPE html> <html> <head> <title>Code Editor</title> <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
 </head>
-<body> 
+<body  onbeforeunload="return myFunction()"> 
 				
 
 <div id="nav">
@@ -20,7 +20,7 @@
   </div>
  </div>		
 				
-<textarea id="html" placeholder="write HTML here...." autocomplete="on">
+<textarea id="html" placeholder="write HTML here...." autocomplete="off" spellcheck="false">
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,14 +32,14 @@
 </html>				
 </textarea> 
 
-<textarea id="css" placeholder=" write CSS here....">
+<textarea id="css" placeholder=" write CSS here...." autocomplete="off" spellcheck="false">
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 </textarea> 
-<textarea id="js" placeholder="write JavaScript here...."></textarea> 
+<textarea id="js" placeholder="write JavaScript here...." autocomplete="off" spellcheck="false"></textarea> 
 
 
 </div>
@@ -73,6 +73,7 @@ display: flex;
 flex-direction:column;
 user-select:none;
 align-items:center;
+overscroll-behavior: contain;
 }				
 
 textarea::selection{
@@ -288,6 +289,7 @@ border:0.1px solid #fff;
 text-shadow:0px  0px  0px;
 justify-content:flex-end;
 font-size:27px;
+font-family:Arial;
 color:#3fe413;
 background:#000;
 position:absolute;
@@ -315,9 +317,9 @@ display:none;
 position:absolute;
 left:10px;
 top:1px;
-background:#000;
+background:transparent;
 width:94%;
-border:2.5px solid #000;
+border:2.5px solid transparent;
 border-radius:10px;
 }
 
@@ -361,7 +363,10 @@ border-bottom-right-radius: 10px;
 
 
 
-
-
+<script>
+function myFunction() {
+  return "Don't leave this page.";
+}
+</script>
 <script src="editor.js"></script>
 </body> </html>

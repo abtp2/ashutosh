@@ -15,3 +15,9 @@ x.style.transition ="all 1s";
 }); 
 
  
+document.addEventListener('mouseup', function(e) {
+    var container = document.getElementById('navbar');
+    if (!container.contains(e.target)) {
+        container.style.maxHeight ="60px";		
+container.style.transition ="all 0.25s";
+    }});				
