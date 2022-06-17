@@ -1,3 +1,11 @@
+var head = document.getElementsByTagName('HEAD')[0]; 
+
+var link = document.createElement('link'); 
+link.rel = 'stylesheet'; 
+link.type = 'text/css'; 
+link.href ='GetWeb.css'; 
+head.appendChild(link); 
+
 document.write('<script src="swiper.js"><\/script>');
 function get(){
 var copyText = document.getElementById("alert");
